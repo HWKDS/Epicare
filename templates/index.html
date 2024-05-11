@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Epicare</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+            background-image: url('https://mindy-support.com/wp-content/uploads/2020/06/shutterstock_15124900731.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        
+        form {
+            width: 300px;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <form action="/submit" method="post" enctype="multipart/form-data">
+       
+        <h2>Enter Your Information</h2>
+        <input type="file" name="user_input" placeholder="enter your photo url" required>
+        <h3>symptoms</h3><br>
+        <input type="checkbox" name="redness" value="redness">redness<br>
+        <input type="checkbox" name="insect bite" value=insectbite"> insect bite<br>
+        <input type="checkbox" name="itchiness" value="itchiness"> itchiness<br>
+        <input type="checkbox" name="burning sensation" value="burning sensation"> burning sensation<br>
+        <input type="submit" value="submit">
+    </form>
+
+</body>
+</html>
